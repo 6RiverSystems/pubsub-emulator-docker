@@ -3,7 +3,7 @@ ARG GCLOUD_SDK_VERSION=alpine
 
 # Use google cloud sdk
 FROM google/cloud-sdk:$GCLOUD_SDK_VERSION
-MAINTAINER Singularities
+MAINTAINER 6RiverSystems
 
 # Install Java 8 for Pub/Sub emulator
 RUN apk --update add openjdk8-jre

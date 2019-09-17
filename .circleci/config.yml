@@ -36,8 +36,8 @@ workflows:
   nightly:
     triggers:
       - schedule:
-          # this schedule is designed to be one hour after node_base
-          cron: "0 1 * * *"
+          # this doesn't update often, run weekly in the wee hours of Monday morning
+          cron: "0 1 * * 1"
           filters:
             branches:
               only:

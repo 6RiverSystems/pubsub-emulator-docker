@@ -43,6 +43,6 @@ workflows:
   #           branches:
   #             only:
   #               - master
-    jobs:
-      - build:
-          context: 6rs-circle
+  #   jobs:
+  #     - build:
+  #         context: 6rs-circle

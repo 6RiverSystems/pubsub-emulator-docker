@@ -33,15 +33,16 @@ workflows:
     jobs:
       - build:
           context: 6rs-circle
-  nightly:
-    triggers:
-      - schedule:
-          # this doesn't update often, run weekly in the wee hours of Monday morning
-          cron: "0 1 * * 1"
-          filters:
-            branches:
-              only:
-                - master
-    jobs:
-      - build:
-          context: 6rs-circle
+  # don't auto-build this any more, we don't use it any more
+  # nightly:
+  #   triggers:
+  #     - schedule:
+  #         # this doesn't update often, run weekly in the wee hours of Monday morning
+  #         cron: "0 1 * * 1"
+  #         filters:
+  #           branches:
+  #             only:
+  #               - master
+  #   jobs:
+  #     - build:
+  #         context: 6rs-circle
